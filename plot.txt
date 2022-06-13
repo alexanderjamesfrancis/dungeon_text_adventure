@@ -1,0 +1,44 @@
+RPG logic:
+
+Name
+Age - will affect stats
+build - skinny (less stength, more agility), typical (no aditional attributes), muscular (more stength, less agility)
+background - Urchin, tradesman, guild-member
+demenor - noble, underhanded, True Neutrel
+token tool - knife, rope, hammer
+
+stats:
+
+Stength
+agility
+charisma
+
+Plot:
+
+The personThe player is set before the local baron whos daughter is ill with a blood curse after touching a piece of hexed jewelry.
+ The baron is aware of an artefact in one of the local cave systems which has been untouched due to the residing goblins and other denziens. 
+The player has answered the call for [demenor reason] and the promise of reward. 
+
+The player will meet the baron privately over a low fire, they are invited in and sit in an opposing chair. They will be interviewed to build the character and then concluded they will set off.
+
+scene 1:
+
+The player arrives at the cave flanked by trees. There is a goblin asleep at the entrance and armed with a spear. what do:
+1. Sneak past him (agility check)
+2. Run at him and beat him up (stength check)
+3. Walk over to him and try to start a conversation (charisma)
+4. Use tool to subdue
+
+If win:
+text
+If fail:
+One other option to try.
+If that fails:
+The goblin stabs them with the spear and they die.
+
+
+scene 2: 
+
+
+
+
