@@ -9,7 +9,7 @@ token tool - knife, rope, hammer
 
 stats:
 
-Stength
+Strength
 agility
 charisma
 
