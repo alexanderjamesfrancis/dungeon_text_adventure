@@ -35,7 +35,7 @@ def player_builder():
 
     # age input
 
-    age = input("How old are you?")
+    age = int(input("How old are you?"))
     if age < 28:
         agility += 2
         print("Ah, with such youth comes confidence. Let us hope the agility of your age plays in your favor")
@@ -48,16 +48,16 @@ def player_builder():
     print('"You appear to be a promising candidate, come closer into the light to get a better eye of personage.')
 
     # build input
-    build = input('What physical build are you: Skinny, Typical, Muscular?')
-    while build.lower() != "skinny" or "typical" or "muscular":
+    build = input('What physical build are you: Skinny, Typical, Muscular?').lower()
+    while build != "skinny" or "typical" or "muscular":
         build = input('What physical build are you: Skinny, Typical, Muscular?')
-    if build.lower() == "skinny":
+    if build == "skinny":
         agility += 2
         strength -= 2
         print('The Baron leans back, "A nimble frame may be better suited to what task I have required of you".')
-    elif build.lower() == "Typical":
+    elif build == "Typical":
         print('I see before me someone who is capable of physical work. This is good as you will need the stamina.')
-    elif build.lower() == "muscular":
+    elif build == "muscular":
         strength += 2
         agility -= 2
         print('Your personage projects strength, let us pray you do not need it where you are going.')
@@ -123,7 +123,7 @@ def player_builder():
     finish = input('End character creation? Y or N').lower
 
     if finish ==  'y':
-        return player(name=name,age=age,build=build,background=background,demeanor=demeanor,token_tool=token_tool)
+        return Player(name=name,age=age,build=build,background=background,demeanor=demeanor,token_tool=token_tool)
     elif finish == 'n':
         player_builder()     
 
