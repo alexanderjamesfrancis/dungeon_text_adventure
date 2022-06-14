@@ -5,7 +5,7 @@ from turtle import back
 from pkg_resources import find_distributions
 
 
-class player:
+class Player:
     def __init__(self,name,age,build,background,demeanor,token_tool):
         self.name = name,
         self.age = age,
@@ -13,14 +13,14 @@ class player:
         self.background = background,
         self.demeanor = demeanor,
         self.token_tool = token_tool,
-        self.strength = 10,
-        self.agility = 10,
-        self.charisma = 10
+        self.strength = 0,
+        self.agility = 0,
+        self.charisma = 0
 
 def player_builder():
-    strength = 0
-    agility = 0
-    charisma = 0
+    strength = 10
+    agility = 10
+    charisma = 10
     print(
         "The dusk rolls in as you arrive at the Baron's castle. You announce your presence to his footmen, aware of why you have come, they lead you up to the keep and into a dimly lit room. To the left, in front of a dying fire, sits the Baron.",
 
