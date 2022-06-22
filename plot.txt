@@ -25,9 +25,45 @@ scene 1:
 
 The player arrives at the cave flanked by trees. There is a goblin asleep at the entrance and armed with a spear. what do:
 1. Sneak past him (agility check)
+    On Pass:
+        The goblin is clearly there under duress and not really paying attention. Taking advantage of this, you use you agility to sneak past the goblin leaving completely unaware of 
+        your presence.
+    On Fail:
+        You attempt to move stealthly past the goblin but trip on a bush. The audible russle alert the goblin and he turns around, spear drawn. 
+        Pick another option
 2. Run at him and beat him up (stength check)
+    On Pass:
+        You walk, then you run at the goblin. The goblin caught unaware by this act of sheer bravado stands dumb founded as you approach. With on single, mightly swing you knock
+        out the goblin cold. You hide the unconcoious goblin in a bush and move into the cave.
+    On Fail: 
+        You begin to run over to the goblin who is not expecting such an act of boldness. You ready you fists to prepare the beatdown and close the distance to take a swing. You fists make 
+        contact. The goblin however takes the punches in their stride and once they shruged of the opening flurry, they manage the spear to bear in your direction. With the gap closed ,
+        the goblin lands a piercing blow, leaving you with a wound. Another would spell your doom. 
+        Wound == True
+        Pick another option    
 3. Walk over to him and try to start a conversation (charisma)
+        You position yourself squarely in via of the goblin. From the distance, the goblin looks confused - likely not used to such approaches from the locals. As you get closer, 
+        the goblin brings their spear to bear towards you. You draw closer and begin to talk to them:
+        What do you talk to them about?
+            You establish a warm greeting and simply ask to be let past.
+                (Peak charisma required)
+                Assuming the direct approach is best, you simply say hello to the goblin. The face of the goblin betrays confusion.
+                "Hello?" The goblin responds cautiously.
+                "I have business inside this cave and require to be let past." You proclaim confidently. The goblin visibly recoils, not acustomed to be talked to in such a manner.
+                Against all odds, the goblin simply steps aside. 
+                You enter the cave.
+            You explain you are here to sell high-quality wears to their leader.
+                You approach the goblin with you bag at the forefront. Your throat is cleared, "I am hear with wares for your leader and will on speak to them exclusivly.
+            You reveal the class struggle between the goblin proletarite and the monarchical bourgoise and how their role is exploited by the goblin elites to perpetuate the status quo.
+
 4. Use tool to subdue
+    if token_tool = hammer:
+        bonk
+    if token_tool = knife:
+        if stength is high:
+            goblin surrenders
+    if token tool is rope:
+        lasso
 
 If win:
 text
@@ -37,7 +73,42 @@ If that fails:
 The goblin stabs them with the spear and they die.
 
 
-scene 2: 
+scene 2:
+
+The player approaches a corridor which measures approx 30 ft long. It is lit dimly by burning torchs. At the end of the corridor you can
+see a thick wooden door which has 3 bolts on it. 
+The floor and walls are damp with moisture. You hear the dull mumur of goblins behind the door. 
+
+Options:
+1. Stroll over to the door  
+    How would you like to walk over to the door?
+        Like a boss
+            As you walk over to the door, you hear a click under foot and to your right you see a large boulder swing towards you.
+                *make Agility check*
+                On Pass:
+                    You dodge the boulder and it crashes loudly into the other side of the corridor. 
+                    You use you mass to 'catch' the boulder in its path and push it out of your way, remaining unscathed
+                On Fail:
+                    The boulder catches you unaware and hits you square in the chest. It has imparted a wound. Another injury will surely be your end.    
+        Like a human
+            If Tradesman or Guilds-man == True:
+                As you make your way across the corridor, you begin to critque the goblin ways of building. The boring of the cave is sloppy,
+                the torchs are poorly made and the floor uneven. By extention of this critque your gaze is drawn to the floor where you see a raised plate attached to a cord 
+                leading to a large stone boulder. You opt to step over this plate, fearing the result.
+            
+        Like a sloth
+            If Urchin:
+                Your history of living on street has taught you to move methodically and a cave is no different. Expecting the worst, you move slowly through the corridor.
+                You find a pressure plate in the floor linked to a stone boulder pivoted to cause maximum damage. You step over the trap and continue to the door silently. 
+
+scene 3:
+
+Sneaking through the goblin base.
+
+
+scene 4:
+
+Finding the artefact. 
 
 
 

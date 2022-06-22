@@ -17,6 +17,7 @@ class Player:
         self.strength = 0,
         self.agility = 0,
         self.charisma = 0
+        self.wounded = False
 
 def player_builder():
     strength = 10
