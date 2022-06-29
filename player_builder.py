@@ -16,8 +16,9 @@ class Player:
         self.token_tool = token_tool,
         self.strength = 0,
         self.agility = 0,
-        self.charisma = 0
-        self.wounded = False
+        self.charisma = 0,
+        self.wounded = False,
+        self.presence_known = False
 
 def player_builder():
     strength = 10

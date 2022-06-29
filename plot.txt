@@ -95,20 +95,71 @@ Options:
                 As you make your way across the corridor, you begin to critque the goblin ways of building. The boring of the cave is sloppy,
                 the torchs are poorly made and the floor uneven. By extention of this critque your gaze is drawn to the floor where you see a raised plate attached to a cord 
                 leading to a large stone boulder. You opt to step over this plate, fearing the result.
+            If not Tradesman or Guild-man:
+                You stroll across the corridor towards the door at the far end. You pay little heed to the pressure plate on the floor which depresses into the floor once bearing your weight. You here a 'click' as a hefty boulder flys towards your person.
+                    if *high agility*
+                        Using your agility , you manage to dodge the boulder by a hair with the rock making a large crash.
+                            Presence_known == True
+                    else
+                        The boulder slams into your body, cracking bones as it leaves a lasting injury.
+                            Wounded == True          
             
         Like a sloth
             If Urchin:
                 Your history of living on street has taught you to move methodically and a cave is no different. Expecting the worst, you move slowly through the corridor.
-                You find a pressure plate in the floor linked to a stone boulder pivoted to cause maximum damage. You step over the trap and continue to the door silently. 
+                You find a pressure plate in the floor linked to a stone boulder pivoted to cause maximum damage. You step over the trap and continue to the door silently.
+                    If tool == knife:
+                        Disable trap?
+                            if yes:
+                                 You take the knife and carefully diable the rope holding the mechanism in place. 
+                            Else:
+                                You opt to move on without diabling the trap.
+
+            else:
+                You move along the corridor is excrusiating care and deliberating pace. You note that the cave is not a natural formation for the most part and has been widen using crude tool. The moisure on the walls appears to have formed based on inadeqate air flow. Your focus on the door yields the beleif that the door is reguarly repaired for whatever reason. 
+                However, the dim light of the corridor does not illuminate the ground where a careless foot depressed a pressure plate. With a 'click' the plate releases a large boulder to your side.
+                    if *high agility*
+                        Using your agility , you manage to dodge the boulder by a hair with the rock making a large crash.
+                            Presence_known == True
+                    else
+                        The boulder slams into your body, cracking bones as it leaves a lasting injury.
+                            Wounded == True
+
+2. You reach the door. Before you stands a door clad in steel banding. From you postion the door appears to be in good state of repair with timbers that show signs of age. 
+The door has 3 dead bolts spaced evenly apart. The area, compared the corridor en-large, is well-lit and all bolts can be seen clearly.
+    What do:
+        1. Examine the bolts closely:   
+            Time is taken to properly investigate the bolts.
+                The top bolt appears made of brass and is covered in a large quantity of small scratches. The sheen is dull, denoting this bolt has been here some time. 
+                The middle bolt appears to be made of iron. Rust has begun to form on the edges of the mechanism. 
+                The bottom bolt looks to be made of wood. The grain shows signs of being recently installed.      
+
 
 scene 3:
 
 Sneaking through the goblin base.
+    1. As you proceed through the door, a smell unlike any other hit you with full force. One of unwashed masses, poor sanitation couple with hints of roasting pork. If there was any doubt this was the goblin's base of operation, they have now been put to rest.
+    The room opens up into 3 areas: A winding corridor to the North, A curtain leading to a room West and The wooden door to the East:
+    How would you like to proceed:
+        East:
+            If Presence_known == False:
+                You open the curtain to find a pair of goblins asleep, their snores ring throughout the chamber. They lie undisturbed by your presence.
+                    Leave the room
+                    investigate the room
+                    incapacitate the goblins
+            If Presence_known:
+                You open the curtain to the room and find the area empty. On the floor, lies several piles of straw arranged into sleep bedding. There is shelves to the left which are empty. The room is dimly lit by a torch to the right. 
+        West: 
+                You pull the curtain to reveal an array of stoves with pots and cauldreons bubbling away to the left hand side. The kitchen appear devioud of any life. To the right there is serveral counter with knives, spoons and other untensiles likely used for cooking. To the cetner there is a dining table, approc 10 ft in length.
+
+
 
 
 scene 4:
 
 Finding the artefact. 
+
+
 
 
 
